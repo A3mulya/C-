@@ -44,3 +44,151 @@ To display boolean datatype
 int main() {
        printf("%d ",true);
 }
+
+**************************************************
+Exercise 1
+**************************************************
+#include<stdio.h>
+int main() {
+    int i;
+   for(i=1;i<=10;i++)
+   {
+       printf("%i ",i);
+   }
+}
+
+To find sum of natural numbers
+#include<stdio.h>
+int main() {
+    int i,sum;
+    printf("The first 10 natural numbers are:\n");
+   for(i=1;i<=10;i++)
+   {
+     printf("%d ",i);  
+     sum=sum+i;
+   }
+   printf("\nThe sum is : %d",sum);
+}
+
+To find sum and average
+#include<stdio.h>
+int main() {
+    int i,sum=0,num;
+    float avg;
+    printf("Input the 10 numbers :\n");
+    for(i=1;i<=10;i++)
+   {
+    
+     scanf("%d\n",&num);
+      printf("Number %d is %d\n",i,num);
+     sum=sum+num;
+   }
+   avg=sum/10.0;
+   printf("\nThe sum is : %d",sum);
+   printf("\nThe average is : %.6f",avg);
+}
+
+To find cube of numbers
+#include<stdio.h>
+int main() {
+    int i,prod=1,num;
+    printf("Input number of terms :");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+   {
+     prod=i*i*i;
+     printf("\nNumber is %d and cube of %d is : %d",i,i,prod);
+   }
+   
+}
+
+#include<stdio.h>
+int main() {
+    int i,j,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+   
+}
+*****************************************************
+Exercise 2
+*****************************************************
+To check if 2 numbers are equal
+#include<stdio.h>
+int main() {
+    int num1,num2;
+    scanf("%d %d",&num1,&num2);
+    if(num1==num2)
+    {
+        printf("Number1 and Number2 are equal");
+    }
+    else
+    {
+        printf("Number1 and Number2 are unequal");
+    }
+}
+
+To check if given number is positive or negative
+#include<stdio.h>
+int main() {
+    int num;
+    scanf("%d",&num);
+    if(num<0)
+    {
+        printf("Number is negative");
+    }
+    else if(num>0)
+    {
+        printf("Number is positive");
+    }
+    else printf("Number is zero");
+}
+
+To check if given triangle is equilateral,isosceles or scalene
+#include<stdio.h>
+int main() {
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a<0 || b<0|| c<0)
+    {
+        printf("Enter valid sides");
+    }
+    else
+    {
+    if((a==b)&&(b==c))
+    {
+        printf("This is an equilateral triangle");
+    }
+    else if((a!=b)&&(b!=c)&&(a!=c))
+    {
+        printf("This is an scalene triangle");
+    }
+    else printf("This is an isosceles triangle");
+    }
+}
+
+To check if character is numeric,digit or special character
+#include<stdio.h>
+int main() {
+    char ch;
+    scanf("%c",&ch);
+   if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+    {
+        printf("'%c' is alphabet.", ch);
+    }
+    else if(ch >= '0' && ch <= '9')
+    {
+        printf("'%c' is digit.", ch);
+    }
+    else 
+    {
+        printf("'%c' is special character.", ch);
+    }
+
+}
