@@ -1,0 +1,70 @@
+To sort the character array
+#include<stdio.h>
+int main()
+{
+    char a[5]={'Z', 44, 66, 'A', 192};
+    int i,j,temp,num;
+    for(i=0;i<5;i++)
+    {
+        for(j=i+1;j<5;j++)
+        {
+            if(a[i]>a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    printf("The sorted elements are: ");
+    for(i=0;i<5;i++)
+    {
+        printf("%c\t",a[i]);
+    }
+}
+
+To convert from lower case to upper case
+#include<stdio.h>
+int main()
+{
+    char i,j;
+    scanf("%c",&i);
+    if(i>=97 && i<=122)
+    {
+        j=i-32;
+        printf("%c",j);
+    }
+}
+
+Use of break statement
+#include<stdio.h>
+int main()
+{
+    int i;
+    for(i=1;i<50;i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d\t",i);
+            
+        }
+        if(i==46)
+            break;
+    }
+}
+
+Use of 'atoi'
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+    int val;
+    char b[20];
+    strcpy(b,"9999");
+    val=atoi(b);
+    printf("String :%s \nValue is :%d",b,val);
+    strcpy(b,"456asd");
+    val=atoi(b);
+    printf("\nString :%s \nValue is :%d",b,val);
+}
