@@ -68,3 +68,13 @@ int main()
     val=atoi(b);
     printf("\nString :%s \nValue is :%d",b,val);
 }
+
+Swapping 2 values
+#include<stdio.h>
+int main()
+{
+	int a=50,b=80;
+	a=a+b-(b=a);
+	printf("a = %d\n", a);
+	printf("b = %d", b);
+}
