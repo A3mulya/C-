@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int abc();
+int bbc();
+void main()
+{
+  clrscr();
+  printf("Main function executed");
+  abc();
+  getch();
+}
+int abc()
+{
+   printf("\nabc function executed");
+   bbc();
+   return 0;
+}
+int bbc()
+{
+   printf("\nbbc function executed");
+   return 0;
+}
